@@ -11,7 +11,7 @@ Create a local copy of the project from its Git repository by executing
 git clone git@github.com:istaustria/gallery-template.git
 ```
 inside the desired project directory.
-Alternatively, one can also directly download the repository content.
+Alternatively, one can directly download the repository content.
 
 ### Testing
 
@@ -41,4 +41,16 @@ The main steps would be:
 ## Development
 
 This is a living document and you are encouraged to contribute to its functionality and robustness.
-In case you add personal improvement or fix bugs that you encounter, please commit them to the repository!
+
+> **In case you add personal improvement or fix bugs, please commit them to the repository!**
+
+## Contributors
+
+Developed by Thomas AUZINGER [<thomas.auzinger@ist.ac.at>](mailto:thomas.auzinger@ist.ac.at) (see [personal webpage](http://auzinger.name)).
+
+## License
+
+Copyright 2018 Thomas AUZINGER [<thomas.auzinger@ist.ac.at>](mailto:thomas.auzinger@ist.ac.at)
+
+This software uses the MIT License.
+See LICENSE.txt.
