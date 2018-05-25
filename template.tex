@@ -16,6 +16,12 @@
 % Emperically, the following reduction was found to work. It is used when drawing the image.
 \newlength{\textheightreduction}\setlength{\textheightreduction}{0.4pt}
 
+% Correct missing options for \includegraphics that was removed with TeXLive 2016 onwards.
+% See https://tex.stackexchange.com/a/407167/25523 and https://tex.stackexchange.com/a/392679/25523.
+\makeatletter
+\define@key{Gin}{resolution}{\pdfimageresolution=#1\relax}
+\makeatother
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% SETUP DRAWING FUNCTIONALITY %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
