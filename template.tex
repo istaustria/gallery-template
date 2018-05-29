@@ -74,8 +74,8 @@
 				resolution=72,viewport=0px 0px 64px 64px,clip,
 				width=\paperwidth,height=\paperheight]{image}};
 		% Idealy, one would just use a single background pixel from the image. However, the above command can fail for
-		%  an image region smaller than 64 by 64 pixel. If this is a problem, a (single-pixel) background image needs to explicitly
-		%  generated outside of LaTeX.
+		%  an image region smaller than 64 by 64 pixel on Linux (and up to 256 by 256 pixel on Windows).
+		% If this is a problem, a (single-pixel) background image needs to explicitly generated outside of LaTeX.
 	\end{tikzpicture}
 	%
 	% Draw image and accompanying text. Keep the default font values to ensure uniformity of the gallery.
