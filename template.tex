@@ -84,7 +84,9 @@
 		%   *) Centered: Use 'anchor=north'      and 'at (0.5\textwidth,...)'.
 		%   *) Left:     Use 'anchor=north west' and 'at (0,...)'.
 		%   *) Right:    Use 'anchor=north east' and 'at (\textwidth,...)'.
-		\node[inner sep=0pt,anchor=north]
+		% To verically center the image use 'inner ysep=Xcm' where X is a suitable number. Generally, this is only
+		%  necessary if the image width is significantly larger than its height.
+		\node[inner xsep=0pt, inner ysep=0cm,anchor=north]
 			at (0.5\textwidth,\textheight-\textheightreduction)
 			% For the 'max height' below, use a scaled value of the \textheight so that your image is as large as
 			%  possible without colliding with the text box.
