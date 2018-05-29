@@ -70,7 +70,9 @@
 		%  command. The origin of the viewport is the lower left corner of the image.
 		\node[inner sep=0pt,anchor=north west]
 			at (current page.north west)
-			{\includegraphics[resolution=72,viewport=0px 0px 64px 64px,clip,width=\paperwidth,height=\paperheight]{image}};
+			{\includegraphics[
+				resolution=72,viewport=0px 0px 64px 64px,clip,
+				width=\paperwidth,height=\paperheight]{image}};
 		% Idealy, one would just use a single background pixel from the image. However, the above command can fail for
 		%  an image region smaller than 64 by 64 pixel. If this is a problem, a (single-pixel) background image needs to explicitly
 		%  generated outside of LaTeX.
@@ -84,12 +86,13 @@
 		%   *) Right:    Use 'anchor=north east' and 'at (\textwidth,...)'.
 		\node[inner sep=0pt,anchor=north]
 			at (0.5\textwidth,\textheight-\textheightreduction)
-			% For the 'max height' below, use a scaled value of the \textheight so that your image is as large as possible without
-			%  colliding with the text box.
+			% For the 'max height' below, use a scaled value of the \textheight so that your image is as large as
+			%  possible without colliding with the text box.
 			{\includegraphics[max width=\textwidth,max height=.67\textheight]{image}};
 		%
 		% Draw the text box. Use the 'opacity' value to make the textbox (partially) transparent.
-		\node[fill=TextboxColor,opacity=0,text opacity=1,text=TextColor,anchor=south west,align=left,text width=\textwidth]
+		\node[fill=TextboxColor,opacity=0,text opacity=1,text=TextColor,
+			anchor=south west,align=left,text width=\textwidth]
 		at (0,0) % The origin is placed at the lower left corner of the page's text body.
 		{
 			\medskip
